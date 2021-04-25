@@ -11,11 +11,11 @@
 class Model_Auth_User_Token extends ORM {
 
 	// Relationships
-	protected $_belongs_to = [
+	protected array $_belongs_to = [
 		'user' => ['model' => 'User'],
 	];
 
-	protected $_created_column = [
+	protected array $_created_column = [
 		'column' => 'created',
 		'format' => TRUE,
 	];
